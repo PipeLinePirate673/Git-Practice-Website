@@ -57,4 +57,39 @@ h3 {
 
     border-bottom: 1px solid #3c3836;
     padding-bottom: 10px;
+/* table branch css */
+}
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: monospace;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3c3836;
+}
+
+th {
+    color: #b8bb26;
+    text-transform: uppercase;
+}
+
+td {
+    color: #bab8b8;
+}
+
+tr:hover {
+    background: #1d2021;
+}
+
+#upgrade_pass {
+    color: green;
+}
+
+.no_upgrade {
+    color: red;
 }

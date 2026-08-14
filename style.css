@@ -75,3 +75,7 @@ tr:hover {
 #upgrade_pass {
     color: green;
 }
+
+.no_upgrade {
+    color: red;
+}

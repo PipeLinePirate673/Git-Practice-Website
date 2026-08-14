@@ -146,3 +146,9 @@ tr:hover {
 .no_upgrade {
     color: red;
 }
+
+
+.remote_repo {
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+}

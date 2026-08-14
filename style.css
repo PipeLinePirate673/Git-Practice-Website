@@ -156,3 +156,37 @@ tr:hover {
     font-size: 1.4rem;
     letter-spacing: 5px;
 }
+
+
+
+/* BRANCHES */
+
+.branches {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+
+    padding: 20px;
+
+    background: #1d2021;
+    border: 1px solid #3c3836;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.branch {
+    margin: 0;
+
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.branch_merge {
+    color: #b8bb26;
+}
+
+.branch_rebase {
+    color: #1b7cbd;
+}

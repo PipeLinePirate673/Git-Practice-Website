@@ -96,11 +96,11 @@ h3 {
 }
 
 
-#homelab_title {
+.homelab_title {
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 85%;
-    max-width: 1366px;
+
     text-align: center;
 
     color: #ebdbb2;
@@ -110,8 +110,12 @@ h3 {
 
     border-bottom: 1px solid #3c3836;
     padding-bottom: 10px;
-/* table branch css */
+
+    box-sizing: border-box;
 }
+
+
+
 table {
     width: 90%;
     margin: 30px auto;

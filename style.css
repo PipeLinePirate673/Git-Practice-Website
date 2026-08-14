@@ -71,3 +71,7 @@ td {
 tr:hover {
     background: #1d2021;
 }
+
+#upgrade_pass {
+    color: green;
+}

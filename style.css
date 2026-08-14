@@ -110,11 +110,7 @@ h3 {
 
     border-bottom: 1px solid #3c3836;
     padding-bottom: 10px;
-
-    box-sizing: border-box;
 }
-
-
 
 table {
     width: 90%;
@@ -155,6 +151,7 @@ tr:hover {
 .remote_repo {
     font-size: 1.4rem;
     letter-spacing: 5px;
+    color: red;
 }
 
 
@@ -205,4 +202,40 @@ tr:hover {
 
 .branch_rebase {
     color: #1b7cbd;
+
+}
+    /* Homelab pictures branch changes */
+
+.homelab_pics {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.picture {
+    width: 300px;
+    text-align: center;
+}
+
+.picture h3 {
+    margin-bottom: 12px;
+    color: #b8bb26;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+.picture img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    border: 1px solid #3c3836;
+    border-radius: 8px;
+
+    transition: transform 0.2s ease;
+}
+
+.picture img:hover {
+    transform: scale(1.03);
 }

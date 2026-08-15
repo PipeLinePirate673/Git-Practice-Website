@@ -357,4 +357,4 @@ During my Git practice I worked with different branches, merges, rebasing and pu
 
 Here is the final Git history of the practice repository:
 
-![Git history](images/git_log_full.png)
+![Git history](git_log_full.png)

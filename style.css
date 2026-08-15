@@ -320,6 +320,85 @@ tr:hover {
 }
 
 
+
+/* PULL REQUEST CONFLICT EXERCISE */
+
+.conflict_pull {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.conflict_pull > h2 {
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #444;
+}
+
+.conflict_pull > h2 span {
+    color: red;
+}
+
+.git-guide {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+
+    border: 1px solid #444;
+    border-radius: 10px;
+
+    background: #1e1e1e;
+}
+
+.git-guide > h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #444;
+}
+
+.git-guide h3 {
+    margin-top: 30px;
+    color: red;
+}
+
+.git-guide p {
+    line-height: 1.6;
+    color: #ccc;
+    text-align: center;
+}
+
+.git-guide pre {
+    margin: 15px 0;
+    padding: 15px;
+
+    overflow-x: auto;
+
+    border: 1px solid #333;
+    border-radius: 6px;
+
+    background: #111;
+}
+
+.git-guide pre code {
+    font-family: "Courier New", monospace;
+    color: #ddd;
+}
+
+.git-guide p code {
+    padding: 2px 5px;
+
+    border-radius: 4px;
+
+    background: #292929;
+    color: #fff;
+
+    font-family: "Courier New", monospace;
+}
+
+.git-guide h3:last-of-type {
+    margin-top: 40px;
+}
 #pull_request_conflict {
     margin: 15px 0;
     padding: 8px 12px;

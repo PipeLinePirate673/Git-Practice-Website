@@ -399,3 +399,13 @@ tr:hover {
 .git-guide h3:last-of-type {
     margin-top: 40px;
 }
+#pull_request_conflict {
+    margin: 15px 0;
+    padding: 8px 12px;
+
+    color: #777;
+    font-family: monospace;
+    font-style: italic;
+
+    border-left: 3px solid #555;
+}

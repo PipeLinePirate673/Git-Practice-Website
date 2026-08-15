@@ -318,3 +318,15 @@ tr:hover {
     color: #aaa;
     font-style: italic;
 }
+
+
+#pull_request_conflict {
+    margin: 15px 0;
+    padding: 8px 12px;
+
+    color: #777;
+    font-family: monospace;
+    font-style: italic;
+
+    border-left: 3px solid #555;
+}

@@ -200,7 +200,173 @@
 
         </div>
 
+    </section>
 
+
+
+    <section class="conflict_pull">
+        <h2>This part was made for a <span>Pull request conflict</span> exercise</h2>
+
+        <section class="git-guide">
+
+            <p>
+                When GitHub reports a conflict in a Pull Request, it means that
+                Git cannot automatically combine the changes from the two branches.
+            </p>
+
+            <h3>1. Switch to your feature branch</h3>
+
+            <p>
+                First, make sure you are on the branch used by your Pull Request:
+            </p>
+
+            <pre><code>git switch feature/pullFeature</code></pre>
+
+            <p>Check your current branch:</p>
+
+            <pre><code>git branch</code></pre>
+
+            <p>
+                The <code>*</code> should be next to your feature branch.
+            </p>
+
+
+            <h3>2. Get the latest changes from GitHub</h3>
+
+            <p>
+                Fetch the latest information from the remote repository:
+            </p>
+
+            <pre><code>git fetch origin</code></pre>
+
+            <p>
+                This downloads the latest changes without modifying your working files.
+            </p>
+
+
+            <h3>3. Update your local main branch</h3>
+
+            <p>Switch to <code>main</code>:</p>
+
+            <pre><code>git switch main</code></pre>
+
+            <p>Pull the latest changes:</p>
+
+            <pre><code>git pull origin main</code></pre>
+
+            <p>
+                Now your local <code>main</code> branch should contain the latest
+                version from GitHub.
+            </p>
+
+
+            <h3>4. Switch back to your feature branch</h3>
+
+            <pre><code>git switch feature/pullFeature</code></pre>
+
+
+            <h3>5. Merge main into your feature branch</h3>
+
+            <p>
+                Now merge the updated <code>main</code> branch into your feature branch:
+            </p>
+
+            <pre><code>git merge main</code></pre>
+
+            <p>
+                If there are conflicts, Git will stop the merge and tell you
+                which files contain conflicts.
+            </p>
+
+
+            <h3>6. Open the conflicted files</h3>
+
+            <p>
+                Inside the conflicted file, Git will mark the conflicting sections
+                like this:
+            </p>
+
+            <pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+        Your changes
+        =======
+        Changes from main
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code></pre>
+
+            <p>
+                Decide which version you want to keep. You can keep your changes,
+                keep the changes from <code>main</code>, or combine both.
+            </p>
+
+            <p>
+                After resolving the conflict, remove the
+                <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>,
+                <code>=======</code> and
+                <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>
+                conflict markers.
+            </p>
+
+
+            <h3>7. Check the status</h3>
+
+            <pre><code>git status</code></pre>
+
+            <p>
+                Git should show the files that were modified during the conflict.
+            </p>
+
+
+            <h3>8. Add the resolved files</h3>
+
+            <p>
+                Tell Git that you have resolved the conflicts:
+            </p>
+
+            <pre><code>git add .</code></pre>
+
+
+            <h3>9. Complete the merge</h3>
+
+            <pre><code>git commit</code></pre>
+
+            <p>
+                Git will create a merge commit. You can keep the default commit
+                message or edit it.
+            </p>
+
+
+            <h3>10. Push your feature branch</h3>
+
+            <pre><code>git push origin feature/pullFeature</code></pre>
+
+            <p>
+                GitHub will automatically update your Pull Request.
+                If all conflicts have been resolved, the Pull Request should
+                no longer show a conflict.
+            </p>
+
+
+            <h3>Quick Summary</h3>
+
+            <pre>
+                <code>
+                    git switch feature/pullFeature
+                    git fetch origin
+                    git switch main
+                    git pull origin main
+                    git switch feature/pullFeature
+                    git merge main
+
+                    # Resolve conflicts manually
+
+                    git add .
+                    git commit
+                    git push origin feature/pullFeature
+                </code>
+            </pre>
+
+        </section>
+
+    </section>
 
 
 

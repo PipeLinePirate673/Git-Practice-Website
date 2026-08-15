@@ -239,3 +239,82 @@ tr:hover {
 .picture img:hover {
     transform: scale(1.03);
 }
+
+
+
+
+
+/* PULL REQUEST CSS */
+
+.pull_request {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.pull_request > h2 {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+.pull_request--card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    width: 80%;
+    margin: 0 auto 25px;
+    padding: 20px;
+
+    border: 1px solid #444;
+    border-radius: 10px;
+    background: #1e1e1e;
+}
+
+.note_image {
+    width: 220px;
+    height: 160px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+}
+
+.note_content {
+    flex: 1;
+}
+
+.note_content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.note_content hr {
+    border: 0;
+    height: 1px;
+    margin: 12px 0 20px;
+
+    background: linear-gradient(
+        to right,
+        #555,
+        transparent
+    );
+}
+
+.note_content p {
+    line-height: 1.6;
+}
+
+.note_extra {
+    display: block;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid #444;
+
+    color: #aaa;
+    font-style: italic;
+}
